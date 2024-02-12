@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Krona One:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="career">
+      <div class="frame-parent">
+        <div class="frame-wrapper">
+          <div class="frame-group">
+            <div class="month-year-frame-parent">
+              <div class="month-year-frame">
+                <div class="day">DAY</div>
+              </div>
+              <div class="month">MONTH</div>
+              <div class="year">YEAR</div>
+            </div>
+            <div class="frame-group1">
+              <div class="frame-pair-parent">
+                <div class="frame-pair">
+                  <div class="empty-frame">
+                    <!-- <div class="frame-section"></div> -->
+                    <input
+                    class="frame-placeholder"
+                    placeholder="10"
+                    id="inputdays"
+                    type="text"
+                  />
+                  </div>
+                </div>
+                <div class="frame-content">
+                  <div class="frame-text">
+                    <input
+                      class="frame-placeholder"
+                      placeholder="10"
+                      type="text"
+                      id="inputmonth"
+
+                    />
+                  </div>
+                </div>
+                <div class="frame-pair1">
+             
+                  <input
+                    class="frame-pair-child"
+                    placeholder="10"
+                    type="text"
+                    id="inputyear"
+ 
+        
+              
+                  />
+          
+
+                </div>
+           
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="calculateBtn" onclick="handleSubmit()">
+          <img src="./assets/images/icon-arrow.svg" alt="">
+        </button>
+        <div class="months-container">
+          <div class="days-minutes"></div>
+          <div class="seconds-label">
+            <div class="frame-separator">
+           
+              <div class="year-frame" id="year">13</div>
+              <div class="month-frame">
+                <div class="years">Years</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hours-minutes-frame">
+          <div class="days-minutes-frame">
+            <div class="seconds-frame">
+              <div class="year-frame-group">
+                <div class="month-frame-group" id="month">12</div>
+              </div>
+              <div class="frames-frame" id="days">13</div>
+              <div class="text-frame">
+                <div class="days-minutes-frame1" id="minutes">13</div>
+              </div>
+              <div class="year-frame-group1">
+                <div class="div" id="seconds">13</div>
+              </div>
+            </div>
+            <div class="years-text">
+              <div class="months-text">
+                <div class="months">Months</div>
+              </div>
+              <div class="seconds-text">
+                <div class="days">Days</div>
+                <div class="minutes">Minutes</div>
+              </div>
+              <div class="seconds">Seconds</div>
+            </div>
+          </div>
+    
+        </div>
+        <h5 style="    font-size: 20px;
+        margin: 0 auto;
+        left: -137px;
+        position: relative;
+        justify-content: center;
+        font-size:15px;
+        display: flex;
+        color: rgba(0,0,0,0.4);
+        ">
+          Age In Seconds : <span id="ageinseconds" style="
+          font-size:15px;
+          color: var(--color-blue);">
+
+          </span>
+        </h5>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
